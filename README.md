@@ -1,1 +1,1 @@
-# s-t3-rapi-postgres
+# Monorepo boilerplate for nextJs13 / strapi / postgresDB
