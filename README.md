@@ -15,13 +15,13 @@ Before setup, you'll need to start and wait for database docker container.
 docker compose -f docker-compose.dev.yml up -d --build --wait
 ```
 
-Before running for dev environment, you'll need to launch the initial setup for strapi :
+If you haven't already, you'll need to install turbo globally.
 
 ```bash
-cd apps/cms && yarn start
+yarn global add turbo
 ```
 
-Return to project root and fire everything up with
+Then you can run the following command to start the development server.
 
 ```bash
 turbo dev
