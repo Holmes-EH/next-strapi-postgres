@@ -18,3 +18,16 @@ services:
       timeout: 10s
       retries: 15
       start_period: 30s
+
+  turbo:
+    container_name: next-strapi
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    depends_on:
+      - db
+    restart: unless-stopped
+    env_file: ./apps/cms/.env
+    ports:
+      - '1337:1337'
+      - '3000:3000'
