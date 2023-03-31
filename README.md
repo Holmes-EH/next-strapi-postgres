@@ -7,7 +7,7 @@ Start by running
 yarn install
 ```
 
-Then duplicate and rename `apps/cms/.env.example` to `.env` and fill in every value
+Then duplicate and rename `apps/strapi/.env.example` to `.env` and fill in every value
 
 Before setup, you'll need to start and wait for database docker container.
 
