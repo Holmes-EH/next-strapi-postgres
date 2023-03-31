@@ -13,12 +13,36 @@ services:
       PGUSER: postgres
       POSTGRES_PASSWORD: example
       PGDATA: /var/lib/postgresql/data/pgdata
+    networks:
+      - cms_network
     healthcheck:
       test: ['CMD-SHELL', 'pg_isready']
       interval: 5s
       timeout: 10s
       retries: 15
       start_period: 30s
+  client:
+    container_name: next
+    build:
+      context: .
+      dockerfile: ./apps/next/Dockerfile
+    restart: always
+    ports:
+      - 3000:3000
+    networks:
+      - cms_network
+  strapi:
+    container_name: strapi
+    depends_on:
+      'db':
+        condition: service_healthy
+    build:
+      context: .
+      dockerfile: ./apps/strapi/Dockerfile
+    restart: always
+    ports:
+      - 1337:1337
+    networks:
+      - cms_network
 networks:
   cms_network:
-    external: true

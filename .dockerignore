@@ -1,3 +1,4 @@
 node_modules
-apps/cms/data
-apps/cms/public/uploads/*
+apps/strapi/data
+apps/strapi/public/uploads/*
+data
