@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./apps/strapi/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/strapi-template:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/strapi-template:latest

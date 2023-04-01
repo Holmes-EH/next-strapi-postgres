@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./apps/next/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/next-template:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/next-template:latest
