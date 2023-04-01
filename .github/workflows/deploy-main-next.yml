@@ -1,4 +1,4 @@
-name: Build and push to docker hub
+name: NextJS - Build and push to docker hub
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   build_and_push:
-    name: Build and push nextJS image to dockerhub
+    name: Build and push docker image to dockerhub
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
