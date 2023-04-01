@@ -10,7 +10,7 @@ on:
 
 jobs:
   build_and_push:
-    name: Build and push docker image to dockerhub
+    name: Build and push strapi image to dockerhub
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
