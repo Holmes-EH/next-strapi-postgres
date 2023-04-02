@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_home_page_sections",
+  "info": {
+    "displayName": "Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sectionComponents": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.section1"
+    }
+  }
+}

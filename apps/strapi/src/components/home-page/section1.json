@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_home_page_section1s",
+  "info": {
+    "displayName": "sectionBase",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "dominantColor": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    }
+  }
+}

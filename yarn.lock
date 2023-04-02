@@ -2423,6 +2423,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sendgrid/client@npm:^7.7.0":
+  version: 7.7.0
+  resolution: "@sendgrid/client@npm:7.7.0"
+  dependencies:
+    "@sendgrid/helpers": ^7.7.0
+    axios: ^0.26.0
+  checksum: 81299ff65b67de3df8c20f545aa7c3416519865079a2d21ce1ee80c76da568799679eb680fca51ef0df0ad34628e695e1991ea9cd8809baa9173ce5cda17fa50
+  languageName: node
+  linkType: hard
+
+"@sendgrid/helpers@npm:^7.7.0":
+  version: 7.7.0
+  resolution: "@sendgrid/helpers@npm:7.7.0"
+  dependencies:
+    deepmerge: ^4.2.2
+  checksum: 20387aae1bff06b9febc39f82cd184dd6e59d0e1ae2e74565d88802a6c6a5e4e571924335bfc8b1493f5f09e832f526f71d81e813295b2060379cb6e53786429
+  languageName: node
+  linkType: hard
+
+"@sendgrid/mail@npm:7.7.0":
+  version: 7.7.0
+  resolution: "@sendgrid/mail@npm:7.7.0"
+  dependencies:
+    "@sendgrid/client": ^7.7.0
+    "@sendgrid/helpers": ^7.7.0
+  checksum: 8bd446c367983e70b5d1f7a9a5796b2db3dd9304a3d6adf36fb3ee87ff0021e69223222e9ddfa62a40749ed9b136d0e6e4567e9dc4ad66b4ae38a404b07f24e1
+  languageName: node
+  linkType: hard
+
 "@sentry/core@npm:6.19.7":
   version: 6.19.7
   resolution: "@sentry/core@npm:6.19.7"
@@ -2794,6 +2823,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@strapi/plugin-color-picker@npm:^4.9.0":
+  version: 4.9.0
+  resolution: "@strapi/plugin-color-picker@npm:4.9.0"
+  dependencies:
+    "@strapi/design-system": 1.6.6
+    "@strapi/helper-plugin": 4.9.0
+    "@strapi/icons": 1.6.6
+    prop-types: ^15.7.2
+    react-colorful: 5.6.1
+    react-intl: 6.3.2
+  peerDependencies:
+    "@strapi/strapi": ^4.4.0
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    react-router-dom: 5.3.4
+    styled-components: 5.3.3
+  checksum: 4216be61354b5e65bfd07a82b8315cfad78eae0d81e1616c76b4234f9ef29089cb86bd13e39b3670fbd3ca1c707713f5704f403c238c32a5719851250dbfa730
+  languageName: node
+  linkType: hard
+
 "@strapi/plugin-content-manager@npm:4.9.0":
   version: 4.9.0
   resolution: "@strapi/plugin-content-manager@npm:4.9.0"
@@ -2964,6 +3013,16 @@ __metadata:
   version: 4.9.0
   resolution: "@strapi/provider-audit-logs-local@npm:4.9.0"
   checksum: 166e080956f945643b08cae08a181d02dd32954dc2959a1cf1ea4ad7e1f5d4cbd0f8bc4b2a4224b3b155028c9fa014f1302231b9de8e400666fef8a6112233e4
+  languageName: node
+  linkType: hard
+
+"@strapi/provider-email-sendgrid@npm:^4.9.0":
+  version: 4.9.0
+  resolution: "@strapi/provider-email-sendgrid@npm:4.9.0"
+  dependencies:
+    "@sendgrid/mail": 7.7.0
+    "@strapi/utils": 4.9.0
+  checksum: 68408dd04314db00e9961a1e830e619d8938cf90851e458da262adf735966bc94656259c2edf06d18c940a8ab5228755face97f946d859b1246d2b95c91e7701
   languageName: node
   linkType: hard
 
@@ -4411,6 +4470,15 @@ __metadata:
     form-data: ^4.0.0
     proxy-from-env: ^1.1.0
   checksum: 7440edefcf8498bc3cdf39de00443e8101f249972c83b739c6e880d9d669fea9486372dbe8739e88b3bf8bb1ad15f6106693f206f078f4516fe8fd47b1c3093c
+  languageName: node
+  linkType: hard
+
+"axios@npm:^0.26.0":
+  version: 0.26.1
+  resolution: "axios@npm:0.26.1"
+  dependencies:
+    follow-redirects: ^1.14.8
+  checksum: d9eb58ff4bc0b36a04783fc9ff760e9245c829a5a1052ee7ca6013410d427036b1d10d04e7380c02f3508c5eaf3485b1ae67bd2adbfec3683704745c8d7a6e1a
   languageName: node
   linkType: hard
 
@@ -7458,7 +7526,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.15.0":
+"follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.14.8, follow-redirects@npm:^1.15.0":
   version: 1.15.2
   resolution: "follow-redirects@npm:1.15.2"
   peerDependenciesMeta:
@@ -10934,7 +11002,7 @@ __metadata:
     eslint-config-custom: "*"
     next: 13.2.4
     react: latest
-    react-dom: 17.0.2
+    react-dom: latest
     tsconfig: "*"
     typescript: 5.0.2
     ui: "*"
@@ -12279,6 +12347,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-colorful@npm:5.6.1":
+  version: 5.6.1
+  resolution: "react-colorful@npm:5.6.1"
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: e432b7cb0df57e8f0bcdc3b012d2e93fcbcb6092c9e0f85654788d5ebfc4442536d8cc35b2418061ba3c4afb8b7788cc101c606d86a1732407921de7a9244c8d
+  languageName: node
+  linkType: hard
+
 "react-copy-to-clipboard@npm:^5.1.0":
   version: 5.1.0
   resolution: "react-copy-to-clipboard@npm:5.1.0"
@@ -12325,7 +12403,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:17.0.2, react-dom@npm:^17.0.2":
+"react-dom@npm:^17.0.2":
   version: 17.0.2
   resolution: "react-dom@npm:17.0.2"
   dependencies:
@@ -12335,6 +12413,18 @@ __metadata:
   peerDependencies:
     react: 17.0.2
   checksum: 1c1eaa3bca7c7228d24b70932e3d7c99e70d1d04e13bb0843bbf321582bc25d7961d6b8a6978a58a598af2af496d1cedcfb1bf65f6b0960a0a8161cb8dab743c
+  languageName: node
+  linkType: hard
+
+"react-dom@npm:latest":
+  version: 18.2.0
+  resolution: "react-dom@npm:18.2.0"
+  dependencies:
+    loose-envify: ^1.1.0
+    scheduler: ^0.23.0
+  peerDependencies:
+    react: ^18.2.0
+  checksum: 7d323310bea3a91be2965f9468d552f201b1c27891e45ddc2d6b8f717680c95a75ae0bc1e3f5cf41472446a2589a75aed4483aee8169287909fcd59ad149e8cc
   languageName: node
   linkType: hard
 
@@ -13177,6 +13267,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"scheduler@npm:^0.23.0":
+  version: 0.23.0
+  resolution: "scheduler@npm:0.23.0"
+  dependencies:
+    loose-envify: ^1.1.0
+  checksum: d79192eeaa12abef860c195ea45d37cbf2bbf5f66e3c4dcd16f54a7da53b17788a70d109ee3d3dde1a0fd50e6a8fc171f4300356c5aee4fc0171de526bf35f8a
+  languageName: node
+  linkType: hard
+
 "schema-utils@npm:4.0.0, schema-utils@npm:^4.0.0":
   version: 4.0.0
   resolution: "schema-utils@npm:4.0.0"
@@ -13766,14 +13865,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"strapi-plugin-populate-deep@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "strapi-plugin-populate-deep@npm:2.0.0"
+  checksum: 16ecce572b68a366e450b61a38e3f35a4982de578778d4ea12ec0cb13b14712f5952db083fe173aa927beb279454785727409fa139f2c88477fe417b357ca2f4
+  languageName: node
+  linkType: hard
+
 "strapi@workspace:apps/strapi":
   version: 0.0.0-use.local
   resolution: "strapi@workspace:apps/strapi"
   dependencies:
+    "@strapi/plugin-color-picker": ^4.9.0
     "@strapi/plugin-i18n": 4.9.0
     "@strapi/plugin-users-permissions": 4.9.0
+    "@strapi/provider-email-sendgrid": ^4.9.0
     "@strapi/strapi": 4.9.0
     pg: 8.8.0
+    strapi-plugin-populate-deep: ^2.0.0
   languageName: unknown
   linkType: soft
 

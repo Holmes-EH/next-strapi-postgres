@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_parameters_seos",
+  "info": {
+    "displayName": "Seo"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

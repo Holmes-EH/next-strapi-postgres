@@ -10,10 +10,13 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@strapi/plugin-color-picker": "^4.9.0",
     "@strapi/plugin-i18n": "4.9.0",
     "@strapi/plugin-users-permissions": "4.9.0",
+    "@strapi/provider-email-sendgrid": "^4.9.0",
     "@strapi/strapi": "4.9.0",
-    "pg": "8.8.0"
+    "pg": "8.8.0",
+    "strapi-plugin-populate-deep": "^2.0.0"
   },
   "author": {
     "name": "Samuel Holmes"
